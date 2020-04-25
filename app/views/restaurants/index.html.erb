@@ -1,5 +1,6 @@
 <div class="container">
   <h1 class="title">All Restaurants</h1>
+  <%= link_to "Add a New Restaurant", new_restaurant_path %>
   <%= form_tag restaurants_path, method: :get, class: "search-bar" do %>
       <%= text_field_tag :query,
         params[:query],
