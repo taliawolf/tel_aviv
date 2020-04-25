@@ -1,1 +1,18 @@
-<h1>all restaurants</h1>
+<div class="container">
+  <h1 class="title">All Restaurants</h1>
+  <%= form_tag restaurants_path, method: :get, class: "search-bar" do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control mr-2",
+        placeholder: "Find a restaurant"
+      %>
+      <%= submit_tag "Search", class: "search-button m-0" %>
+    <% end %>
+  <div class="business-cards">
+    <% @restaurants.each do |restaurant| %>
+      <div class="business-card">
+        <%= link_to restaurant.name, restaurant_path(restaurant) %>
+      </div>
+    <% end %>
+  </div>
+</div>

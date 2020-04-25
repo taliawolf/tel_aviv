@@ -10,6 +10,7 @@ gem 'font-awesome-sass', '~> 5.12.0'
 gem 'simple_form'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
+gem 'pg_search', '~> 2.3.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets

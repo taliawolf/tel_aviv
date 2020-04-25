@@ -1,3 +1,38 @@
-// Place all the styles related to the restaurants controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.business_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 16px;
+}
+
+.business-card {
+  box-shadow: 0 1.5px 10px 0 rgba(0,0,0,.08);
+  padding: 16px;
+  border-radius: 20px;
+  margin: 16px;
+  font-size: 24px;
+}
+
+.business-card a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+}
+
+.show-details{
+  text-align:center;
+  border-radius:20px;
+  box-shadow: 0 1.5px 10px 0 rgba(0,0,0,.08);
+  padding:24px;
+  margin: 40px;
+}

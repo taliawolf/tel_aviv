@@ -1,1 +1,10 @@
-<h1>All bars</h1>
+<div class="container">
+  <h1 class="title">All Bars</h1>
+  <div class="business-cards">
+    <% @bars.each do |bar| %>
+      <div class="business-card">
+        <%= link_to bar.name, bar_path(bar) %>
+      </div>
+    <% end %>
+  </div>
+</div>
